@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PrimeiraAplicacaoWeb.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -16,7 +17,7 @@ namespace PrimeiraAplicacaoWeb.Controllers
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
-
+            ViewBag.Pessoa = new Pessoa { Id = 1, Nome = "Wesley" };
             return View();
         }
 
